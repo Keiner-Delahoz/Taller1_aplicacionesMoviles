@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -70,6 +71,31 @@ public class HomeActivity extends AppCompatActivity {
                 finish();
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_home, menu);
+        return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+
+        if (id == R.id.action_area_triangulo) {
+            // Código para manejar la opción "Área triángulo"
+            // Por ejemplo, puedes iniciar una nueva actividad aquí
+            return true;
+        } else if (id == R.id.action_celsius_fahrenheit) {
+            // Código para manejar la opción "Celsius a Farenheit"
+            // Por ejemplo, puedes iniciar otra actividad aquí
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
 }

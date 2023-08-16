@@ -1,10 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/mnuAreaTriangulo"
+        android:id="@+id/action_area_triangulo"
         android:title="Área triángulo" />
-
     <item
-        android:id="@+id/mnuCelsiusFahrenheit"
-        android:title="Celsius a Fahrenheit" />
+        android:id="@+id/action_celsius_fahrenheit"
+        android:title="Celsius a Farenheit" />
 </menu>
